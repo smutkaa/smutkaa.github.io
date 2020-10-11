@@ -1,0 +1,29 @@
+.slick-list {
+  overflow: hidden; }
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.catalog__slaider {
+  position: relative; }
+
+.catalog__slaider .slick-arrow {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  width: 27px;
+  height: 27px; }
+
+.catalog__slaider .slick-arrow.slick-prev {
+  background: url(../../img/slider_arrow-prev.png) 50% 50% no-repeat;
+  background-color: #a9a9a9; }
+
+.catalog__slaider .slick-arrow.slick-next {
+  background: url(../../img/slider_arrow-next.png) 50% 50% no-repeat;
+  background-color: #a9a9a9; }

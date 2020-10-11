@@ -1,0 +1,65 @@
+
+.slick-list {
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+}
+.catalog__slaider{
+	position: relative;
+	padding: 0 20px 0 20px;
+}
+.catalog__slaider .slick-arrow{
+	z-index: 1000;
+	font-size: 0;
+	position: absolute;
+	bottom: 50%;
+	display: flex;
+	height: 50px;
+	width: 20px;
+}
+
+.catalog__slaider .slick-arrow.slick-prev{
+	left: 0;
+	background: url(../img/scroll-prev.png) 0 0 no-repeat;
+}
+.catalog__slaider .slick-arrow.slick-next{
+	right: 0;
+	background: url(../img/scroll-next.png) 0 0 no-repeat;
+}
+
+.new__slaider{
+	position: relative;
+	padding: 0 20px 0 20px;
+}
+.new__slaider .slick-arrow{
+	z-index: 1000;
+	font-size: 0;
+	position: absolute;
+	bottom: 50%;
+	display: flex;
+	height: 50px;
+	width: 20px;
+}
+
+.new__slaider .slick-arrow.slick-prev{
+	left: 20px;
+	background: url(../img/scroll-prev.png) 0 0 no-repeat;
+}
+.new__slaider .slick-arrow.slick-next{
+	right: 20px;
+	background: url(../img/scroll-next.png) 0 0 no-repeat;
+}
+.new__btn{
+	display: inline-block;
+	text-algin:center;
+}
+@media (max-width: 1245px){
+	.new__info{
+		margin: 0 auto;
+	}
+	.new .new__img{
+		position: absolute;
+		left: 30%;
+	}
+}
