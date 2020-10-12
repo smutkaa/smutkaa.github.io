@@ -14,18 +14,30 @@
 				<div class="burger__header">
 					 <span> </span>
 				</div>
-			</div>
+			</div> 
 			
 			<div class="header__header">
 				<img src="img/logo.png" alt="" class="header__logo">
 				<nav class="header__nav">
 					<ul class="nav__header">         
-						<li class="link"><a href="">ABOUT US</a></li>
-						<li class="link"><a href="">CATALOG</a></li>
-						<li class="link"><a href="">PERSONAL AREA</a></li>
-						<li class="link"><a href="">NEW</a></li>
-						<li class="link"><a href="">FEEDBACK</a></li>
-						<li class="link"><a href="">CONTACTS</a></li>
+						<li class="link">
+							<a href="#about">ABOUT US</a>
+						</li>
+						<li class="link">
+							<a href="#catalog">CATALOG</a>
+						</li>
+						<li class="link">
+							<a href="#">PERSONAL AREA</a>
+						</li>
+						<li class="link">
+							<a href="#new">NEW</a>
+						</li>
+						<li class="link">
+							<a href="#">FEEDBACK</a>
+						</li>
+						<li class="link">
+							<a href="#contacts">CONTACTS</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="header__icon">
@@ -41,16 +53,16 @@
 				</div>
 			</div>
 			<div class="header__main">
-				<h1 class="header__title">BOOk.poski</h1>
-				<h3 class="header__subtitle">Online shop alternative literature</h3>
-				<div class="header__button button">
-					<a href="" class="header__btn btn">Registration</a>
+				<h1 class="header__title show-on-scroll">BOOk.poski</h1>
+				<h3 class="header__subtitle show-on-scroll">Online shop alternative literature</h3>
+				<div class="header__button button ">
+					<a href="" class="header__btn btn ">Registration</a>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<div class="catalog">
+	<div class="catalog" id="catalog">
 		<div class="container">
 			<h5 class="catalog__scroll1">scroll down</h5>
 			<button type="button" class="catalog_btnScrollDown" id="scroll_down">
@@ -121,13 +133,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="about">
+	<div class="about" id="about">
 		<div class="container">
 			<div class="about__block">
 				<h3 class="about__title"> About </h3>
 
-				<p class="about__text">This online store is designed for quick, convenient and easy search of any literature. Every day we update the information, new books, talk about updates to make the site as easy as a possible for you. Contens poupku can be very fast, so you can order express delivery at a low price in the shortest possible time.</p>
-				<p class="about__text">Sign up and be always up to date with the news!</p>
+				<p class="about__text show-on-scroll">This online store is designed for quick, convenient and easy search of any literature. Every day we update the information, new books, talk about updates to make the site as easy as a possible for you. Contens poupku can be very fast, so you can order express delivery at a low price in the shortest possible time.</p>
+				<p class="about__text show-on-scroll">Sign up and be always up to date with the news!</p>
 				
 				<div class="about__button">
 					<a href="" class="about__btn btn">SIGN UP</a>
@@ -135,7 +147,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="new"> 
+	<div class="new" id="new"> 
 		<h2 class="new__title title"> New</h2>
 		<div class="new__slaider">
 			<div class="new__item">
@@ -217,8 +229,8 @@
 			<div class="subscription__row">
 
 				<div class="subscription__item">
-					<h4 class="subscription__price">free</h4>
-					<p class="subscription__text">
+					<h4 class="subscription__price show-on-scroll">free</h4>
+					<p class="subscription__text show-on-scroll">
 						You can pay for books without registering on our site, but it will lose a number of advantages. We have  a system of discounts for regular customers, as well as free delivery in the city ordering every tenth book. Sign up and be always up to date with the news!
 					</p>
 					<div class="subscription__button">
@@ -227,8 +239,8 @@
 				</div>
 
 				<div class="subscription__item">
-					<h4 class="subscription__price">$ 5</h4>
-					<p class="subscription__text">
+					<h4 class="subscription__price show-on-scroll">$ 5</h4>
+					<p class="subscription__text show-on-scroll">
 						- per month. Here for you will act as a system of discouts of 15% on every purchase. You will be informed of new products, as well as you will be available detailed annotations and the ability to download the book yo your device at a lower price
 					</p>
 					<div class="subscription__button">
@@ -237,8 +249,8 @@
 				</div>
 
 				<div class="subscription__item">
-					<h4 class="subscription__price">$ 15</h4>
-					<p class="subscription__text">
+					<h4 class="subscription__price show-on-scroll">$ 15</h4>
+					<p class="subscription__text show-on-scroll">
 						- every month. And the whole packageset yours! Will be accessible to all the books in the online format at a low price, all new, free subscription to the year of our updates, discounts on purchases and shipping
 					</p>
 					<div class="subscription__button button">
@@ -249,7 +261,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="predfooter">
+	<div class="predfooter" id="contacts">
 		<div class="container">
 			<a href="tel:12123355678" class="predfooter__tel">1 212 335-56-78</a>
 			<a href="mailto:somemail@yandex.ru" class="predfooter__email">somemail@yandex.ru</a>
@@ -284,6 +296,8 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js
 "></script>
 	<script src="js/scroll.js" ></script>
+	<script src="js/show-on-scroll.js" ></script>
+	<script src="js/smooth.js" ></script>
 	<script src="js/slick.min.js" ></script>
 	<script src="js/burger.js" ></script>
 	<script src="js/script.js" ></script>

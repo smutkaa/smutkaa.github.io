@@ -357,6 +357,33 @@ body.active {
 .header__button {
   display: inline-block; }
 
+.header__title,
+.header__subtitle {
+  -webkit-transform: translate(0, -20%);
+  -ms-transform: translate(0, -20%);
+  transform: translate(0, -20%);
+  -webkit-transition: opacity 0.5s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  transition: opacity 0.5s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  -o-transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.5s 0.25s ease-out;
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.5s 0.25s ease-out;
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.5s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  will-change: transform, opacity; }
+
+.header__subtitle {
+  opacity: .2;
+  -webkit-transition: opacity .5s .25s ease-out;
+  -o-transition: opacity .5s .25s ease-out;
+  transition: opacity .5s .25s ease-out;
+  will-change: opacity; }
+
+.header__title.is-visible {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.header__subtitle.is-visible {
+  opacity: .8; }
+
 /* CATALOG
 ----------------- */
 .catalog {
@@ -488,7 +515,22 @@ body.active {
   font-weight: 400;
   color: #6a6a6a;
   margin-bottom: 40px;
-  opacity: .9; }
+  -webkit-transform: translate(0, -7%);
+  -ms-transform: translate(0, -7%);
+  transform: translate(0, -7%);
+  opacity: .6;
+  -webkit-transition: opacity 0.5s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  transition: opacity 0.5s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  -o-transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.5s 0.25s ease-out;
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.5s 0.25s ease-out;
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.5s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  will-change: transform, opacity; }
+
+.about__text.is-visible {
+  opacity: .9;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }
 
 .about__btn {
   margin-top: 10px;
@@ -621,6 +663,8 @@ body.active {
     letter-spacing: 0.3em;
     border-radius: 0; }
 
+/* subscription
+========================= */
 .subscription {
   background: url(../img/bg2.jpg) no-repeat center top/cover;
   padding: 142px  0 0 0;
@@ -658,10 +702,45 @@ body.active {
 
 .subscription__text {
   opacity: .7;
+  -webkit-transform: translate(0, -7%);
+  -ms-transform: translate(0, -7%);
+  transform: translate(0, -7%);
   font-size: 16px;
   letter-spacing: 0em;
   font-weight: 400;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  will-change: transform; }
+
+.subscription__text.is-visible {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.subscription__price {
+  -webkit-transform: translate(0, -7%);
+  -ms-transform: translate(0, -7%);
+  transform: translate(0, -7%);
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+  opacity: .1;
+  -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  will-change: transform; }
+
+.subscription__price.is-visible {
+  opacity: .9;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0); }
 
 .subscription__button {
   position: absolute;
@@ -678,6 +757,8 @@ body.active {
 .subscription__button:hover .subscription__btn {
   letter-spacing: 0.2em; }
 
+/* predfooter
+========================= */
 .predfooter .container {
   padding: 30px 20px;
   height: 73px;
@@ -711,6 +792,8 @@ body.active {
     bottom: 0;
     left: -20px; }
 
+/* footer
+========================= */
 .footer .container {
   border: 23px solid #121212;
   display: -webkit-box;
@@ -746,6 +829,8 @@ body.active {
   .footer__bottom:hover {
     opacity: 1; }
 
+/* адаптив
+========================= */
 @media (max-width: 1260px) {
   .footer__top {
     font-size: 18px; } }
