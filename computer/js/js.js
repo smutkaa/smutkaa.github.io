@@ -4,6 +4,6 @@ $('.detail').hover(
 		$('.description').fadeIn();
 	},
 	function() {
-		$('.description').delay(1000).fadeOut(500);
+		$('.description').delay(5000).fadeOut(500);
 	}
 )
