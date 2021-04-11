@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/ico" href="img/favicon.ico">
+	<title>Test</title>
+</head>
+<body>
+	<div class="text__container">
+		<div class="test__label">
+			<div id="label-processor" draggable="true" class="label" data-type="processor" ondragstart="drag(event)" ondragover="allowDrop(event)"> Processor </div>
+			<div id="label-videocard" draggable="true" class="label"  data-type="videoCard" ondragstart="drag(event)" ondragover="allowDrop(event)"> Video card </div>
+			<div id="label-cooling" draggable="true" class="label"  data-type="cooling" ondragstart="drag(event)" ondragover="allowDrop(event)"> Cooling system</div>
+			<div id="label-hardDrive" draggable="true" class="label" id="hardDrive" data-type="hardDrive" ondragstart="drag(event)" ondragover="allowDrop(event)"> Hard drive </div>
+			<div id="label-CD" draggable="true" class="label"  data-type="CD" ondragstart="drag(event)" ondragover="allowDrop(event)"> CD/DVD/drives</div>
+			<div id="label-power" draggable="true" class="label"  data-type="power" ondragstart="drag(event)" ondragover="allowDrop(event)"> Power supply unit</div>
+			<div class="none"> </div>
+		</div>
+		<div class="pc-full" ondrop="drop(event)" ondragover="allowDrop(event)">
+		  <div id="slot-processor" class="size slot default"   data-type="processor"></div>
+		  <div id="slot-videoCard" class="size slot default" data-type="videoCard"></div>
+		  <div id="slot-cooling" class="size slot default"  data-type="cooling"></div>
+		  <div id="slot-hardDrive" class="size slot default" data-type="hardDrive"></div>
+		  <div id="slot-CD" class="size slot default" data-type="CD"></div>
+		  <div id="slot-power" class="size slot default" data-type="power"></div>
+		</div>
+		<div class="test__btn">
+			<button id="check" class="check button">Проверить</button>
+			<button id="clear" class="clear button" onClick="window.location.reload()">Очистить</button>
+		</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/test.js"></script>
+</body>
+</html>
