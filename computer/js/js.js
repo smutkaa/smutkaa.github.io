@@ -1,9 +1,10 @@
-$('.detail').hover(
-	function() {
-		$('.description').html($(this).attr('description-data'));
-		$('.description').fadeIn();
-	},
-	function() {
-		$('.description').delay(5000).fadeOut(500);
-	}
-)
+
+$(document).ready(function () {
+    $(".detail").mouseenter(function(){
+        $('.description').html($(this).attr('description-data'));
+		$('.description').show();
+    });
+  $(".detail").mouseleave(function(){
+       $('.description').hide();
+    });
+});

@@ -291,7 +291,7 @@ svg {
 
 .pc-full {
   position: relative;
-  background-image: url("../../img/main.png");
+  background-image: url("../img/main.png");
   background-size: contain;
   min-height: 860px;
   min-width: 750px;
