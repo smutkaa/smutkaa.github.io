@@ -52,6 +52,14 @@ svg{
 }
 .title{
 	display: block;
+	font-size: 60px;
+	color: white;
+	letter-spacing: 15px;
+	line-height: 70px;
+	text-align: left;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: 10px;
 	word-wrap: break-word;
 	text-shadow: -10px 6px 3px rgba(173,29,29,0.4); 
 }
@@ -62,16 +70,6 @@ svg{
 	max-width: 65%;
 	box-shadow: 0px 20px 50px 10px rgba(169, 169, 169, 0.1);
 	position: relative;
-}
-.title{
-	font-size: 60px;
-	color: white;
-	letter-spacing: 15px;
-	line-height: 70px;
-	text-align: left;
-	margin-top: 70px;
-	margin-bottom: 70px;
-	width: 10px;
 }
 .text{
 	font-family: 'Arkhip', sans-serif;
@@ -162,7 +160,8 @@ svg{
 .nav{
 	position: fixed;
 	left: 20px;
-	top: calc(25vh);
+	top: 50%;
+	margin-top: -320px; 
 }
 .nav__link{
 	font-family: 'Arkhip', sans-serif;
@@ -310,43 +309,86 @@ svg{
 }
 
 #modal_form {
-    width: 700px; 
-    height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
-    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-    left: 50%; /* пoлoвинa экрaнa слевa */
-    margin-top: -275px;
-    margin-left: -350px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
-    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
-    z-index: 9999; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    max-width: 750px; 
+    max-height: 450px;
+    position: fixed;
+    top: 45%;
+    left: 50%; 
+    margin-top: -225px;
+    margin-left: -350px; 
+    display: none; 
+    opacity: 0;
+    z-index: 9999; 
     padding: 20px 10px;
 }
  
-/* Пoдлoжкa */
 #overlay {
-    z-index:9998; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-    position:fixed; /* всегдa перекрывaет весь сaйт */
-    background-color:#000; /* чернaя */
-    opacity:0.98; /* нo немнoгo прoзрaчнa */
-    -moz-opacity:0.98; /* фикс прозрачности для старых браузеров */
-    filter:alpha(opacity=80);
+    z-index:9998; 
+    position:fixed; 
+    background-color:#000; 
+    opacity:0.8; 
     width:100%; 
-    height:100%; /* рaзмерoм вo весь экрaн */
-    top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    height:100%; 
+    top:0; 
     left:0;
     cursor:pointer;
-    display:none; /* в oбычнoм сoстoянии её нет) */
+    display:none;
 }
  
-/* Кнoпкa зaкрыть для тех ктo в тaнке) */
 .modal_close {
-    width: 21px;
-    height: 21px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -10px;
+    right: -15px;
     cursor: pointer;
     display: block;
     color:white;
+}
+
+@media (max-width: 1800px){
+	.nav__link{
+		font-size: 16px;
+		letter-spacing: 2px;
+		line-height: 60px;
+		margin-left: 10px;
+	}
+	.nav{
+		position: fixed;
+		left: 20px;
+		top: 50%;
+		margin-top: -240px; 
+	}
+	.title{
+		margin-top: 60px;
+		font-size: 50px;
+		letter-spacing: 13px;
+		line-height: 60px;
+	}
+	.container{
+		background-color: #111;
+		padding: 20px 40px 70px 50px;
+		margin: 0 auto;
+		max-width: 62%;
+		box-shadow: 0px 20px 50px 10px rgba(169, 169, 169, 0.1);
+		position: relative;
+	}
+	.text{
+		font-family: 'Arkhip', sans-serif;
+		font-size: 15px;
+		line-height: 25px;
+		margin-top: 20px;
+	}
+	.row__text{
+		margin-top: 40px;
+		margin-left: 100px;
+	}
+	.subtitle{
+		font-size: 18px;
+		margin-top: 45px;
+		font-style: italic;
+	}
+	.processor__point {
+	    font-size: 15px;
+	}
 }
