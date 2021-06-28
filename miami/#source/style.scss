@@ -130,7 +130,6 @@ body{
 .main__frame{
 	display: flex;
 	max-width: 1386px;
-	max-height: 721px;
 	margin: 88px auto 0px auto;
 	background: rgba(26, 31, 35, 0.7);
 	border: 1px solid #4A4A4A;
@@ -749,7 +748,6 @@ body{
 	}
 	.main__frame{
 		max-width: 80%;
-		max-height: 700px;
 	}
 	.main__title{
 		font-size: 70px;
@@ -808,7 +806,6 @@ body{
 	}
 	.main__frame{
 		max-width: 80%;
-		max-height: 700px;
 	}
 	.frame__left{
 		padding-right: 100px;
@@ -829,10 +826,6 @@ body{
 @media (max-width: 1450px){
 	.main__frame{
 		max-width: 80%;
-		max-height: 650px;
-	}
-	.frame__left{
-		//width: 110%;
 	}
 	.main__title{
 		font-size: 60px;
@@ -883,7 +876,7 @@ body{
 @media (max-width: 1350px){
 	.main__frame{
 		max-width: 80%;
-		max-height: 620px;
+		
 	}
 	.frame__left{
 		//width: 110%;
@@ -956,9 +949,7 @@ body{
 			top: calc(50% - 150px);
 		}
 	}
-	.main__frame{
-		max-height: 600px;
-	}
+	
 	.main__title{
 		font-size: 55px;
 		line-height: 95px;
@@ -1033,7 +1024,7 @@ body{
 	}
 	.main__frame{
 		max-width: 85%;
-		max-height: 600px;
+		
 		padding: 0px 50px 150px 50px;
 	}
 	.main__title{
@@ -1116,14 +1107,14 @@ body{
 	.main__frame{
 		flex-direction: column;
 		max-width: 75%;
-		max-height: 700px;
+		
 	}
 	.main__title{
 		display: block;
 		line-height: 65px;
 	}
 	.main__frame{
-		padding: 0px 50px 300px 50px;
+		padding: 0px 50px 70px 50px;
 	}
 	.frame__left{
 		padding-top: 50px;
@@ -1254,34 +1245,66 @@ body{
 	    max-width: 600px;
 	    padding-bottom: 70px;
 	}
+	.text_room {
+    	font-size: 18px;
+    }
 	.two_rooms{
-		padding: 60px 20px 52px 35%;
+		padding: 60px 20px 52px 80px;
 		&:before{
-			width: 270px;
-			height: 355px;
-			top: 40px;
-			left: -90px;
+			display: none;
 		}
 	}
 	.three_rooms{
-		padding: 70px 35% 52px 40px;
+		padding: 70px 80px 52px 40px;
 		&:before{
-			width: 270px;
-			height: 355px;
-			top: 50px;
-			right: -90px;
+			display: none;
 		}
 	}
 	.fourth_rooms{
-		padding: 60px 30px 52px 35%;
+		padding:  60px 20px 52px 80px;
 		&:before{
-			width: 270px;
-			height: 355px;
-			top: 50px;
-			left: -90px;
+			display: none;
 		}
 	}
-	.footer .container {
-
-    }
+	.gallery__pic {
+	    height: 100vh;
+	}
+}
+@media (max-width: 800px){
+	.frame__logo{
+		margin-left: -30px;
+	}
+	.frame__left {
+	    padding-right: 0px;
+	    &:before{
+			right: calc(50% - 200px);
+		}
+	}
+	.map__item {
+	    width: 450px;
+	    height: 330px;
+	}
+	.map__title {
+	    font-size: 28px;
+	    margin-bottom: 26px;
+	}
+	.map__text{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 700px){
+	.rooms__frame {
+	    max-width: 500px;
+	    padding-bottom: 70px;
+	}
+	.two_rooms{
+		padding: 60px 20px 52px 60px;
+	}
+	.three_rooms{
+		padding: 70px 60px 52px 40px;
+	}
+	.fourth_rooms{
+		padding:  60px 20px 52px 60px;
+	}
 }
