@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 		<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=900px, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Гостевой дом MIAMI</title>
 </head>
@@ -19,14 +19,21 @@
 						<a href="tel:+79063928659"  class="threeroom__ref ref_room"><img class="tel" src="img/tel.svg" alt=""> +7-929-796-76-00</a>
 					</div>
 				</div>
-				<nav class="threeroom__menu menu_room">
-					<ul class="header__nav">
-						<li> <a href="index.html" class="nav__link _anim-items" > Главная </a> </li>
-						<li> <a href="rooms.html" target="_blank" class="nav__link _anim-items"> Номера </a> </li>
-						<li> <a href="index.html#gallery" class="nav__link _anim-items"> Галерея</a> </li>
-						<li> <a href="index.html#contact" class="nav__link _anim-items"> Контакты</a> </li>
-					</ul>
-				</nav>
+				<div class="main__header">
+					<nav class="threeroom__menu menu_room">
+						<ul class="header__nav">
+							<li> <a href="index.html" class="nav__link _anim-items" > Главная </a> </li>
+							<li> <a href="rooms.html" target="_blank" class="nav__link _anim-items"> Номера </a> </li>
+							<li> <a href="index.html#gallery" class="nav__link _anim-items"> Галерея</a> </li>
+							<li> <a href="index.html#contact" class="nav__link _anim-items"> Контакты</a> </li>
+						</ul>
+					</nav>
+					<div class="header__burger burger_other">
+							<div class="burger__header">
+								 <span></span>
+							</div>
+					</div> 
+				</div>
 			</div>
 		</div>
 	</div>
@@ -68,26 +75,29 @@
 	<div class="three__accommodation room_accommodation">
 		<div class="container">
 				<h2 class="three__accommodation_title accommodation_title">Стоимость размещения:</h2>
-				<table class="three__table accommodation_table">
-			   <tr>
-			    <th class="table__header first_row">Кол-во гостей \ период</th>
-			    <th  class="table__header">Май</th>
-			    <th  class="table__header">Июнь</th>
-			    <th  class="table__header">Июль</th>
-			    <th  class="table__header">Август</th>
-			    <th  class="table__header">Сентябрь</th>
-			    <th  class="table__header">Октябрь</th>
-			   </tr>
-   				<tr>
-   					<td  class="table__row first_row">3 проживающих + 2 доп. места</td>
-   					<td  class="table__row" >1500 р.</td>
-   					<td  class="table__row">2100 р.</td>
-   					<td  class="table__row">3000 р.</td>
-   					<td  class="table__row">3000 р.</td>
-   					<td  class="table__row">2100 р.</td>
-   					<td  class="table__row">1500 р.</td>
-   				</tr>
-   			</table>
+				<div class="scroll__table">
+					<table class="three__table accommodation_table">
+					    <tr>
+						    <th class="table__header first_row">Кол-во гостей \ период</th>
+						    <th  class="table__header">Май</th>
+						    <th  class="table__header">Июнь</th>
+						    <th  class="table__header">Июль</th>
+						    <th  class="table__header">Август</th>
+						    <th  class="table__header">Сентябрь</th>
+						    <th  class="table__header">Октябрь</th>
+					    </tr>
+		   				<tr>
+		   					<td  class="table__row first_row">3 проживающих + 2 доп. места</td>
+		   					<td  class="table__row" >1500 р.</td>
+		   					<td  class="table__row">2100 р.</td>
+		   					<td  class="table__row">3000 р.</td>
+		   					<td  class="table__row">3000 р.</td>
+		   					<td  class="table__row">2100 р.</td>
+		   					<td  class="table__row">1500 р.</td>
+		   				</tr>
+		   			</table>
+				</div>
+				
 		</div>
 
 	</div>
@@ -126,5 +136,6 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script  src="js/slick.min.js"></script>
 	<script  src="js/main_js.js"></script>
+	<script  src="js/burger.js"></script>
 </body>
 </html>
