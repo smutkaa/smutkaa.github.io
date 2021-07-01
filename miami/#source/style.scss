@@ -20,15 +20,16 @@ body{
 }
 
 /* СТИЛИ ДЛЯ БУРГЕРА*/
+
 .header__burger{
 	position: fixed;
-	top: -170px;
-	right: 70px;
+	top: 130px;
+	right: 60px;
 	height: 85%;
 	padding: 0 10px;
 
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	z-index: 100;
 }
 .header__burger.burger_other{
@@ -36,10 +37,13 @@ body{
 		top: 0px;
 		right: 70px;
 }
-
+.header__burger.burger_other.active{
+		position: fixed;
+		top: 80px;
+		right: 70px;
+}
 .header__burger.active{
 	display: flex;
-	align-items: center;
 	z-index: 100;
 }
 .burger__header {
@@ -95,6 +99,7 @@ body{
 		height: 0;
 	}
 }
+
 .main__header{
 	position: relative;
 }
@@ -704,6 +709,7 @@ body{
 	margin-bottom: 135px;
 	.container{
 		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
 
