@@ -16,6 +16,9 @@ $(function () {
 $(function () {
 	$('.slaider_room').slick({
 		slidesToShow:1,
-		dots:true
+		dots:true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		speed: 1000
 	});
 });
