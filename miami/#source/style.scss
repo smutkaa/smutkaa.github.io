@@ -240,9 +240,6 @@ body{
 	color: #FFFFFF;
 	margin-bottom: 50px;
 }
-.rooms__text{
-
-} 
 .text_room{
 	font-size: 30px;
 	line-height: 44px;
@@ -348,11 +345,11 @@ body{
 	display: flex;
 }
 .galley__item {
-	height: 100%;
 	flex: 0 1 33.333%;
 }
 .gallery__pic{
-	height: 120vh;
+	height: auto;
+    width: auto;
 }
 .slick-track{
 	overflow: hidden;
@@ -521,6 +518,7 @@ body{
 	font-size: 30px;
 	line-height: 44px;
 	margin-bottom: 50px;
+	padding-right: 10px;
 }
 .room_price {
 	font-size: 40px;
@@ -613,9 +611,15 @@ body{
 .room_symbol {
 	margin-top: 120px;
 }
-
+.img_room{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+}
 .slaider_room{
-	height: 100vh;
+	height: 800px;
 	overflow: hidden;
 	position: relative;
 	flex: 1 0 50%;
@@ -657,7 +661,7 @@ body{
 	}
 }
 .img_room{
-	width: 100%;
+
 }
 .room_accommodation {
 	padding-bottom: 97px;
