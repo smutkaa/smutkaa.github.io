@@ -899,7 +899,10 @@ body {
     top: 70px;
     left: -150px; }
   .room_nav {
-    padding-left: 50px; } }
+    padding-left: 50px; }
+  .gallery__pic {
+    height: 100vh;
+    width: auto; } }
 
 @media (max-width: 1560px) {
   .main__frame {
@@ -1216,11 +1219,10 @@ body {
   .map__text {
     margin-bottom: 15px; }
   .gallery__slider .slick-arrow {
-    width: 35px; } }
-
-.gallery__pic {
-  height: auto;
-  width: 100%; }
+    width: 35px; }
+  .gallery__pic {
+    height: auto;
+    width: 100%; } }
 
 @media (max-width: 900px) {
   .text_room {
@@ -1442,9 +1444,6 @@ body {
   .wifi:before {
     top: -70px;
     left: 27%; }
-  .wifi:before {
-    top: -70px;
-    left: 27%; }
   .area:before {
     top: -70px;
     left: 17%; }
@@ -1496,7 +1495,19 @@ body {
   .frame__btn {
     margin-right: 30px; }
   .gallery__slider .slick-arrow {
-    width: 30px; } }
+    width: 30px; }
+  .wifi:before {
+    top: -70px;
+    left: 35px; }
+  .area:before {
+    top: -70px;
+    left: 15px; }
+  .tv:before {
+    top: -70px;
+    left: 30px; }
+  .balcony:before {
+    top: -70px;
+    left: 30px; } }
 
 @media (max-width: 500px) {
   .frame__btn {
@@ -1522,7 +1533,7 @@ body {
     line-height: 38px; }
   .rooms__img {
     height: 300px; }
-  .room_right {
+  .room_info .container {
     padding-left: 30px; } }
 
 @media (max-width: 490px) {
@@ -1583,7 +1594,9 @@ body {
     margin-right: 50px;
     position: relative; }
   .room__item {
-    height: 80vh; } }
+    height: 80vh; }
+  .tworoom__accommodation_title {
+    padding: 0 40px; } }
 
 @media (max-width: 430px) {
   .map__title {
@@ -1598,7 +1611,15 @@ body {
     left: -130px; }
   .room_price {
     width: 200px;
-    margin: -30px auto 0 auto; } }
+    margin: -30px auto 0 auto; }
+  .wifi:before {
+    left: 10%; }
+  .area:before {
+    left: -10px; }
+  .tv:before {
+    left: 7%; }
+  .balcony:before {
+    left: 6%; } }
 
 @media (max-width: 400px) {
   .btn_room {
