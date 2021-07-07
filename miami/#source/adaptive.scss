@@ -176,7 +176,12 @@
     .slaider_room .slick-arrow.slick-next {
       right: 20px;
       background: url("../img/black_arrow_right.svg") 0 0/100% no-repeat;
-      opacity: .8; } }
+      opacity: .8; }
+      .img_room {
+        width: auto;
+        height: 100%;
+    }
+       }
 
 @media (max-width: 1250px) {
   .frame__left:after {
@@ -403,7 +408,7 @@
       .map__map {
     width: 100%;
      height: 500px; 
-}
+   }
 .map__item{
   display: inline-block;
   position: static;
@@ -443,7 +448,11 @@
   .scroll__table {
     overflow-x: scroll; }
   .fourroom__table, .three__table, .tworoom__table {
-    width: 1100px; } }
+    width: 1100px; } 
+    .room__item {
+      height: 850px;
+  }
+  }
 
 @media (max-width: 850px) {
   .text_room {
@@ -500,9 +509,12 @@
     margin-bottom: 50px; }
   .rooms__frame {
     max-width: 550px; }
-   }
    .main {
     background-size: cover;
+  }
+  .room__item {
+      height: 100vh;
+  }
 }
 
 @media (max-width: 700px) {
@@ -791,6 +803,9 @@
     margin-right: 50px;
     position: relative;
 }
+.room__item {
+    height: 80vh;
+}
 }
 @media (max-width: 430px) {
  .map__title {
@@ -820,6 +835,9 @@
 .main__title {
     font-size: 36px;
     }
+    .room__item {
+    height: 70vh;
+}
 }
 @media (max-width: 370px) {
   .footer__menu:before {

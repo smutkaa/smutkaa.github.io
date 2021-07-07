@@ -550,7 +550,7 @@ body{
 		position: absolute;
 		content: url(../img/tv.svg);
 		top: -70px;
-		left: -80%;
+		left: -90%;
 	}
 }
 .balcony {
@@ -558,7 +558,7 @@ body{
 		position: absolute;
 		content: url(../img/balcony.svg);
 		top: -70px;
-		left: -50%;
+		left: -60%;
 	}
 }
 .header_left {
@@ -614,11 +614,14 @@ body{
 }
 .img_room{
 	width: 100%;
-	height: auto;
+	height: 100%;
 	
 }
+.room__item {
+	height: 950px;
+}
 .slaider_room{
-	height: 800px;
+	margin-left: -50px;
 	overflow: hidden;
 	position: relative;
 	flex: 1 0 50%;
