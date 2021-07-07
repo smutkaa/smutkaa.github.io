@@ -148,13 +148,14 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column; 
+  }
   .room_right {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
     margin-bottom: 40px;
-    padding-left: 50px; }
+    padding-left: 0px; }
   .img_room {
     width: 70%; }
   .slaider_room {
@@ -345,7 +346,7 @@
     margin-top: 35px; }
   .map__item {
     width: 500px;
-    height: 350px;
+    height: auto;
     left: 100px;
     padding-left: 60px;
     padding-top: 50px;
@@ -500,6 +501,9 @@
   .rooms__frame {
     max-width: 550px; }
    }
+   .main {
+    background-size: cover;
+}
 
 @media (max-width: 700px) {
   .main__frame {
@@ -547,6 +551,11 @@
 .room_price {
     font-size: 35px;
 }
+.room_text  {
+    font-size: 24px;}
+    .room_title {
+          font-size: 44px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -560,7 +569,11 @@
     width: 120px;
     height: 120px; }
   .frame__left:before {
-    right: calc(50% - 170px); } }
+    right: calc(50% - 170px); }
+  .accommodation_title{
+    font-size: 40px;
+  }
+  }
 
 @media (max-width: 605px) {
   .rooms .container {
@@ -601,14 +614,14 @@
   }
   .room_price {
     margin-top: -30px;
-	}
+  }
   .slaider_room .slick-dots button {
     width: 15px;
     height: 15px;
-	}
+  }
   .gallery__slider .slick-arrow.slick-prev {
     left: 30px;}
-  .gallery__slider .slick-arrow.slick-next {
+  .gallery__slider .lick-arrow.slick-next {
     right: 30px;}
 
   .map__title {
@@ -674,6 +687,28 @@
      display: none;
     }
   }
+  .room_nav {
+    padding-left: 30px;
+        padding-bottom: 40px;
+
+  }
+  .room_link{
+    font-size: 25px;
+  }
+  .rooms__information .container {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .rooms__information {
+    font-size: 21px;
+    line-height: 38px;
+  }
+  .rooms__img {
+    height: 300px;
+}
+.room_right{
+  padding-left: 30px;
+}
 }
 
 @media (max-width: 490px) {
@@ -687,9 +722,7 @@
 .slaider_room:before {
     font-size: 55px;
 }
-.accommodation_title{
-  font-size: 42px;
-}
+
 .header__burger.burger_other {
     right: 40px;
     top: -15px;

@@ -26,7 +26,6 @@ body{
 	position: fixed;
 	top: 130px;
 	right: 60px;
-	height: 85%;
 	padding: 0 10px;
 
 	display: flex;
@@ -494,10 +493,11 @@ body{
 .room_info {
 	.container{
 		display: flex;
+		padding-left: 50px;
 	}
 }
 .room_right {
-	padding-left: 100px;
+	padding-left: 80px;
 }
 .room_title {
 	font-size: 56px;
@@ -598,6 +598,7 @@ body{
 .room_nav {
 	padding-top: 15px;
 	padding-bottom: 50px;
+	padding-left: 50px;
 }
 .room_link {
 	color: #1A1F23;
@@ -614,9 +615,7 @@ body{
 .img_room{
 	width: 100%;
 	height: auto;
-	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
+	
 }
 .slaider_room{
 	height: 800px;
