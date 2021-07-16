@@ -807,7 +807,8 @@ body {
     padding-right: 50px; }
 
 .rooms__paragraph {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  color: black }
 
 .rooms__box .container {
   display: -webkit-box;
